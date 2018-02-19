@@ -15,6 +15,7 @@ public class Ferme {
     
     private double budget;
     private String nom;
+    private String motDePasse;
     private ArrayList<Terrain> terrains = new ArrayList<>();
     private ArrayList<Ressource> ressourcesPossedees = new ArrayList<>();
 
@@ -34,6 +35,14 @@ public class Ferme {
         this.nom = nom;
     }
 
+    public String getMotDePasse() {
+        return motDePasse;
+    }
+
+    public void setMotDePasse(String motDePasse) {
+        this.motDePasse = motDePasse;
+    }
+    
     public ArrayList<Terrain> getTerrains() {
         return terrains;
     }
