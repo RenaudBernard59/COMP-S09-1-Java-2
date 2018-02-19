@@ -35,11 +35,11 @@
       <member type="xmi"
               name="gaia.xmi" />
       <member type="pgml"
-              name="gaia_Diagrammedecasdutilisation2.pgml"
+              name="gaia_UserCaseFarm.pgml"
               diagramclass="org.argouml.uml.diagram.use_case.ui.UMLUseCaseDiagram"
               diagramname="UserCase Farm" />
       <member type="pgml"
-              name="gaia_Diagrammedeclasses.pgml"
+              name="gaia_ClassFarm.pgml"
               diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
               diagramname="Class Farm" />
       <member type="todo"
@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Feb 19 11:29:30 CET 2018'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Feb 19 11:38:29 CET 2018'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -117,304 +117,15 @@
         </UML:UseCase>
         <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000A60'
           name = 'Rejoindre partie' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB9'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB9'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000A60'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB6'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
+          isAbstract = 'false'/>
         <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB4'
           name = 'Nouvelle Ferme' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB8'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB8'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB4'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB5'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB5'
-          name = 'Ressources en stock : 3 Blés, 3 Carottes' isSpecification = 'false'
-          isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBA'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBA'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB5'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB6'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB6'
-          name = 'Partie en Cours' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC0'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED0'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED6'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EEC'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF0'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC0'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB6'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBF'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED0'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB6'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC5'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED6'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB6'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED5'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EEC'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB6'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDF'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF0'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB6'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EED'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBB'
-          name = 'Planter Carotte' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC2'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC2'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBB'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBD'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBC'
-          name = 'Planter Blé' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC4'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC4'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBC'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBE'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBD'
-          name = 'Donne 2 ou 3 Carottes après 6 mois' isSpecification = 'false' isRoot = 'false'
-          isLeaf = 'false' isAbstract = 'false'/>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBE'
-          name = 'Donne 3 ou 4 Blés après 6 mois' isSpecification = 'false' isRoot = 'false'
-          isLeaf = 'false' isAbstract = 'false'/>
+          isAbstract = 'false'/>
         <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBF'
           name = 'Créer une Plantation' isSpecification = 'false' isRoot = 'false'
-          isLeaf = 'false' isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC1'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC3'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC1'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBF'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBB'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC3'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBF'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBC'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
+          isLeaf = 'false' isAbstract = 'false'/>
         <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC5'
           name = 'Nourrir Individus' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECF'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED3'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDD'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECF'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC5'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC6'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED3'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC5'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED1'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDD'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC5'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDB'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC6'
-          name = 'Nourrir 1 Fermier (Chaque Trimestre)' isSpecification = 'false'
-          isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECB'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECC'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECD'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECE'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECB'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC6'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC8'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECC'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC6'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC7'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECD'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC6'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC9'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECE'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC6'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECA'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC7'
-          name = 'Manger 3 Blés' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'/>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC8'
-          name = 'Manger 2 Carottes' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'/>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC9'
-          name = 'Manger 2 Fromages' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'/>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ECA'
-          name = 'Manger 1 Chèvre' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'/>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED1'
-          name = 'Nourrir 1 Chèvre (Chaque Trimestre)' isSpecification = 'false' isRoot = 'false'
-          isLeaf = 'false' isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED4'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED4'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED1'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED2'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED2'
-          name = 'Manger 1 Blé' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
           isAbstract = 'false'/>
         <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED5'
           name = 'Reproduction' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
@@ -436,183 +147,10 @@
         </UML:UseCase>
         <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED7'
           name = '2 Chèvres (Tout les ans)' isSpecification = 'false' isRoot = 'false'
-          isLeaf = 'false' isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDA'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDA'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED7'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED8'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED8'
-          name = '1 Nouvelle chèvre' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'/>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDB'
-          name = 'Individu non nourris après 3 mois' isSpecification = 'false' isRoot = 'false'
-          isLeaf = 'false' isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDE'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDE'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDB'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDC'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDC'
-          name = 'Individu Meurt' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'/>
+          isLeaf = 'false' isAbstract = 'false'/>
         <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDF'
           name = 'Exchange Market' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE8'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE9'/>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EEA'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE8'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDF'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE0'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE9'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDF'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE1'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EEA'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDF'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE2'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE0'
-          name = 'Donner 1 Chèvre' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE7'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE7'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE0'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE6'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE1'
-          name = 'Donner 4 Blés' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE5'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE5'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE1'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE3'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE2'
-          name = 'Donner 2 Carottes' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE4'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE4'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE2'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE3'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE3'
-          name = 'Obtenir 1 Chèvre' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
           isAbstract = 'false'/>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EE6'
-          name = 'Obtenir 4 Blés OU 2 Carottes' isSpecification = 'false' isRoot = 'false'
-          isLeaf = 'false' isAbstract = 'false'/>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EED'
-          name = 'Créer Fromage' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF1'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF1'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EED'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EEE'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EEE'
-          name = '1 Chèvre' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
-          isAbstract = 'false'>
-          <UML:ModelElement.clientDependency>
-            <UML:Dependency xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF2'/>
-          </UML:ModelElement.clientDependency>
-          <UML:Namespace.ownedElement>
-            <UML:Dependency xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF2'
-              isSpecification = 'false'>
-              <UML:Dependency.client>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EEE'/>
-              </UML:Dependency.client>
-              <UML:Dependency.supplier>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EEF'/>
-              </UML:Dependency.supplier>
-            </UML:Dependency>
-          </UML:Namespace.ownedElement>
-        </UML:UseCase>
-        <UML:UseCase xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EEF'
-          name = 'Donne 2 ou 3 Fromages Tout les 6 mois' isSpecification = 'false'
-          isRoot = 'false' isLeaf = 'false' isAbstract = 'false'/>
         <UML:Association xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF3'
           name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
           <UML:Association.connection>
@@ -635,25 +173,6 @@
         <UML:Actor xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF6'
           name = 'System' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
           isAbstract = 'false'/>
-        <UML:Association xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF7'
-          name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
-          <UML:Association.connection>
-            <UML:AssociationEnd xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF8'
-              visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
-              aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
-              <UML:AssociationEnd.participant>
-                <UML:Actor xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF6'/>
-              </UML:AssociationEnd.participant>
-            </UML:AssociationEnd>
-            <UML:AssociationEnd xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF9'
-              visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
-              aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
-              <UML:AssociationEnd.participant>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBD'/>
-              </UML:AssociationEnd.participant>
-            </UML:AssociationEnd>
-          </UML:Association.connection>
-        </UML:Association>
         <UML:Association xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EFA'
           name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
           <UML:Association.connection>
@@ -771,25 +290,6 @@
             </UML:AssociationEnd>
           </UML:Association.connection>
         </UML:Association>
-        <UML:Association xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F0D'
-          name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
-          <UML:Association.connection>
-            <UML:AssociationEnd xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F0E'
-              visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
-              aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
-              <UML:AssociationEnd.participant>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC5'/>
-              </UML:AssociationEnd.participant>
-            </UML:AssociationEnd>
-            <UML:AssociationEnd xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F0F'
-              visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
-              aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
-              <UML:AssociationEnd.participant>
-                <UML:Actor xmi.idref = '10-10-1-60--1581701a:161ad363fba:-8000:0000000000000AB8'/>
-              </UML:AssociationEnd.participant>
-            </UML:AssociationEnd>
-          </UML:Association.connection>
-        </UML:Association>
         <UML:Association xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F10'
           name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
           <UML:Association.connection>
@@ -886,25 +386,6 @@
               </UML:AssociationEnd.participant>
             </UML:AssociationEnd>
             <UML:AssociationEnd xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F21'
-              visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
-              aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
-              <UML:AssociationEnd.participant>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDF'/>
-              </UML:AssociationEnd.participant>
-            </UML:AssociationEnd>
-          </UML:Association.connection>
-        </UML:Association>
-        <UML:Association xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F22'
-          name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
-          <UML:Association.connection>
-            <UML:AssociationEnd xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F23'
-              visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
-              aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
-              <UML:AssociationEnd.participant>
-                <UML:UseCase xmi.idref = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F18'/>
-              </UML:AssociationEnd.participant>
-            </UML:AssociationEnd>
-            <UML:AssociationEnd xmi.id = '10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F24'
               visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
               aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
               <UML:AssociationEnd.participant>
@@ -1118,7 +599,7 @@
       />
     </group>
     <rectangle name="Fig1.3"
-      x="-94"
+      x="10"
       y="10"
       width="11"
       height="1"
@@ -1129,7 +610,7 @@
       visibility="0"
     />
     <group name="Fig1.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[-94, 10, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[10, 10, 64, 19]"
          href="10-10-1-60--1581701a:161ad363fba:-8000:0000000000000AB9"
          fill="1"
          fillcolor="white"
@@ -1141,7 +622,7 @@
       </private>
       
       <rectangle name="Fig1.4.0"
-        x="-94"
+        x="10"
         y="10"
         width="64"
         height="19"
@@ -1214,8 +695,8 @@
       />
     </group>
     <rectangle name="Fig2.3"
-      x="50"
-      y="-14"
+      x="10"
+      y="10"
       width="11"
       height="1"
       fill="1"
@@ -1225,7 +706,7 @@
       visibility="0"
     />
     <group name="Fig2.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[50, -14, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[10, 10, 64, 19]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000A60"
          fill="1"
          fillcolor="white"
@@ -1237,8 +718,8 @@
       </private>
       
       <rectangle name="Fig2.4.0"
-        x="50"
-        y="-14"
+        x="10"
+        y="10"
         width="64"
         height="19"
         fill="0"
@@ -1287,7 +768,7 @@
       justification="Center"
     >Nouvelle Ferme</text>
     <group name="Fig3.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[283, 25, 87, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[283, 26, 95, 0]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB4"
          fill="0"
          fillcolor="white"
@@ -1300,8 +781,8 @@
       
       <rectangle name="Fig3.2.0"
         x="283"
-        y="25"
-        width="87"
+        y="26"
+        width="95"
         height="0"
         fill="0"
         fillcolor="white"
@@ -1310,8 +791,8 @@
       />
     </group>
     <rectangle name="Fig3.3"
-      x="282"
-      y="26"
+      x="10"
+      y="10"
       width="11"
       height="1"
       fill="1"
@@ -1321,7 +802,7 @@
       visibility="0"
     />
     <group name="Fig3.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[282, 26, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[10, 10, 64, 19]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EB4"
          fill="1"
          fillcolor="white"
@@ -1333,8 +814,8 @@
       </private>
       
       <rectangle name="Fig3.4.0"
-        x="282"
-        y="26"
+        x="10"
+        y="10"
         width="64"
         height="19"
         fill="0"
@@ -1383,7 +864,7 @@
       justification="Center"
     >Créer une Plantation</text>
     <group name="Fig4.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[219, 121, 87, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[218, 125, 121, 0]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBF"
          fill="0"
          fillcolor="white"
@@ -1395,9 +876,9 @@
       </private>
       
       <rectangle name="Fig4.2.0"
-        x="219"
-        y="121"
-        width="87"
+        x="218"
+        y="125"
+        width="121"
         height="0"
         fill="0"
         fillcolor="white"
@@ -1406,8 +887,8 @@
       />
     </group>
     <rectangle name="Fig4.3"
-      x="218"
-      y="122"
+      x="10"
+      y="10"
       width="11"
       height="1"
       fill="1"
@@ -1417,7 +898,7 @@
       visibility="0"
     />
     <group name="Fig4.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[218, 122, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[10, 10, 64, 19]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EBF"
          fill="1"
          fillcolor="white"
@@ -1429,8 +910,8 @@
       </private>
       
       <rectangle name="Fig4.4.0"
-        x="218"
-        y="122"
+        x="10"
+        y="10"
         width="64"
         height="19"
         fill="0"
@@ -1479,7 +960,7 @@
       justification="Center"
     >Nourrir Individus</text>
     <group name="Fig5.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[283, 177, 87, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[284, 178, 98, 0]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC5"
          fill="0"
          fillcolor="white"
@@ -1491,9 +972,9 @@
       </private>
       
       <rectangle name="Fig5.2.0"
-        x="283"
-        y="177"
-        width="87"
+        x="284"
+        y="178"
+        width="98"
         height="0"
         fill="0"
         fillcolor="white"
@@ -1502,8 +983,8 @@
       />
     </group>
     <rectangle name="Fig5.3"
-      x="282"
-      y="178"
+      x="10"
+      y="10"
       width="11"
       height="1"
       fill="1"
@@ -1513,7 +994,7 @@
       visibility="0"
     />
     <group name="Fig5.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[282, 178, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[10, 10, 64, 19]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EC5"
          fill="1"
          fillcolor="white"
@@ -1525,8 +1006,8 @@
       </private>
       
       <rectangle name="Fig5.4.0"
-        x="282"
-        y="178"
+        x="10"
+        y="10"
         width="64"
         height="19"
         fill="0"
@@ -1575,7 +1056,7 @@
       justification="Center"
     >Reproduction</text>
     <group name="Fig6.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[755, 33, 87, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[758, 33, 82, 0]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED5"
          fill="0"
          fillcolor="white"
@@ -1587,9 +1068,9 @@
       </private>
       
       <rectangle name="Fig6.2.0"
-        x="755"
+        x="758"
         y="33"
-        width="87"
+        width="82"
         height="0"
         fill="0"
         fillcolor="white"
@@ -1598,8 +1079,8 @@
       />
     </group>
     <rectangle name="Fig6.3"
-      x="754"
-      y="34"
+      x="10"
+      y="10"
       width="11"
       height="1"
       fill="1"
@@ -1609,7 +1090,7 @@
       visibility="0"
     />
     <group name="Fig6.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[754, 34, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[10, 10, 64, 19]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED5"
          fill="1"
          fillcolor="white"
@@ -1621,8 +1102,8 @@
       </private>
       
       <rectangle name="Fig6.4.0"
-        x="754"
-        y="34"
+        x="10"
+        y="10"
         width="64"
         height="19"
         fill="0"
@@ -1671,7 +1152,7 @@
       justification="Center"
     >2 Chèvres (Tout les ans)</text>
     <group name="Fig7.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[555, 25, 87, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[554, 31, 143, 0]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED7"
          fill="0"
          fillcolor="white"
@@ -1683,9 +1164,9 @@
       </private>
       
       <rectangle name="Fig7.2.0"
-        x="555"
-        y="25"
-        width="87"
+        x="554"
+        y="31"
+        width="143"
         height="0"
         fill="0"
         fillcolor="white"
@@ -1694,8 +1175,8 @@
       />
     </group>
     <rectangle name="Fig7.3"
-      x="554"
-      y="26"
+      x="10"
+      y="10"
       width="11"
       height="1"
       fill="1"
@@ -1705,7 +1186,7 @@
       visibility="0"
     />
     <group name="Fig7.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[554, 26, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[10, 10, 64, 19]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000ED7"
          fill="1"
          fillcolor="white"
@@ -1717,8 +1198,8 @@
       </private>
       
       <rectangle name="Fig7.4.0"
-        x="554"
-        y="26"
+        x="10"
+        y="10"
         width="64"
         height="19"
         fill="0"
@@ -1730,7 +1211,7 @@
     </group>
   </group>
   <group name="Fig8"
-       description="org.argouml.uml.diagram.use_case.ui.FigUseCase[336, 288, 122, 46]pathVisible=false;stereotypeView=0;extensionPointVisible=false"
+       description="org.argouml.uml.diagram.use_case.ui.FigUseCase[360, 288, 122, 46]pathVisible=false;stereotypeView=0;extensionPointVisible=false"
        href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDF"
        fill="1"
        fillcolor="white"
@@ -1741,7 +1222,7 @@
     </private>
     
     <ellipse name="Fig8.0"
-      x="397"
+      x="421"
       y="311"
       rx="61"
       ry="23"
@@ -1751,7 +1232,7 @@
       strokecolor="black"
     />
     <text name="Fig8.1"
-      x="346"
+      x="370"
       y="299"
       width="101"
       height="23"
@@ -1767,7 +1248,7 @@
       justification="Center"
     >Exchange Market</text>
     <group name="Fig8.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[347, 297, 87, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[370, 299, 101, 0]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDF"
          fill="0"
          fillcolor="white"
@@ -1779,9 +1260,9 @@
       </private>
       
       <rectangle name="Fig8.2.0"
-        x="347"
-        y="297"
-        width="87"
+        x="370"
+        y="299"
+        width="101"
         height="0"
         fill="0"
         fillcolor="white"
@@ -1790,8 +1271,8 @@
       />
     </group>
     <rectangle name="Fig8.3"
-      x="346"
-      y="298"
+      x="34"
+      y="10"
       width="11"
       height="1"
       fill="1"
@@ -1801,7 +1282,7 @@
       visibility="0"
     />
     <group name="Fig8.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[346, 298, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[34, 10, 64, 19]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EDF"
          fill="1"
          fillcolor="white"
@@ -1813,8 +1294,8 @@
       </private>
       
       <rectangle name="Fig8.4.0"
-        x="346"
-        y="298"
+        x="34"
+        y="10"
         width="64"
         height="19"
         fill="0"
@@ -1868,15 +1349,9 @@
                         ownerhref="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF5"
                         angle="135.0"
                         offset="5" />
-      <argouml:pathitem figname="Fig9.6"
-                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
-                        figclassname="org.argouml.uml.diagram.ui.FigEdgePort"
-                        ownerhref="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000EF3"
-                        angle="270.0"
-                        offset="0" />
     </private>
     <path name="Fig9.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2051,7 +1526,7 @@
                         offset="5" />
     </private>
     <path name="Fig11.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2108,7 +1583,7 @@
                         offset="5" />
     </private>
     <path name="Fig12.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2165,7 +1640,7 @@
                         offset="5" />
     </private>
     <path name="Fig13.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2215,7 +1690,7 @@
       justification="Center"
     >Créer N éléments après 6 mois</text>
     <group name="Fig14.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[555, 169, 87, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[553, 179, 182, 0]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F03"
          fill="0"
          fillcolor="white"
@@ -2227,9 +1702,9 @@
       </private>
       
       <rectangle name="Fig14.2.0"
-        x="555"
-        y="169"
-        width="87"
+        x="553"
+        y="179"
+        width="182"
         height="0"
         fill="0"
         fillcolor="white"
@@ -2238,8 +1713,8 @@
       />
     </group>
     <rectangle name="Fig14.3"
-      x="554"
-      y="170"
+      x="10"
+      y="10"
       width="11"
       height="1"
       fill="1"
@@ -2249,7 +1724,7 @@
       visibility="0"
     />
     <group name="Fig14.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[554, 170, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[10, 10, 64, 19]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F03"
          fill="1"
          fillcolor="white"
@@ -2261,8 +1736,8 @@
       </private>
       
       <rectangle name="Fig14.4.0"
-        x="554"
-        y="170"
+        x="10"
+        y="10"
         width="64"
         height="19"
         fill="0"
@@ -2318,7 +1793,7 @@
                         offset="5" />
     </private>
     <path name="Fig15.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2375,7 +1850,7 @@
                         offset="5" />
     </private>
     <path name="Fig16.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2432,7 +1907,7 @@
                         offset="5" />
     </private>
     <path name="Fig17.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2489,7 +1964,7 @@
                         offset="5" />
     </private>
     <path name="Fig18.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2539,7 +2014,7 @@
       justification="Center"
     >Tuer Individu non nourris après 3 mois</text>
     <group name="Fig19.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[547, 89, 87, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[545, 103, 220, 0]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F13"
          fill="0"
          fillcolor="white"
@@ -2551,9 +2026,9 @@
       </private>
       
       <rectangle name="Fig19.2.0"
-        x="547"
-        y="89"
-        width="87"
+        x="545"
+        y="103"
+        width="220"
         height="0"
         fill="0"
         fillcolor="white"
@@ -2562,8 +2037,8 @@
       />
     </group>
     <rectangle name="Fig19.3"
-      x="546"
-      y="90"
+      x="10"
+      y="10"
       width="11"
       height="1"
       fill="1"
@@ -2573,7 +2048,7 @@
       visibility="0"
     />
     <group name="Fig19.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[546, 90, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[10, 10, 64, 19]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F13"
          fill="1"
          fillcolor="white"
@@ -2585,8 +2060,8 @@
       </private>
       
       <rectangle name="Fig19.4.0"
-        x="546"
-        y="90"
+        x="10"
+        y="10"
         width="64"
         height="19"
         fill="0"
@@ -2642,7 +2117,7 @@
                         offset="5" />
     </private>
     <path name="Fig20.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2692,7 +2167,7 @@
       justification="Center"
     >Donner N éléments</text>
     <group name="Fig21.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[163, 297, 87, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[163, 300, 116, 0]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F17"
          fill="0"
          fillcolor="white"
@@ -2705,8 +2180,8 @@
       
       <rectangle name="Fig21.2.0"
         x="163"
-        y="297"
-        width="87"
+        y="300"
+        width="116"
         height="0"
         fill="0"
         fillcolor="white"
@@ -2715,8 +2190,8 @@
       />
     </group>
     <rectangle name="Fig21.3"
-      x="162"
-      y="298"
+      x="10"
+      y="10"
       width="11"
       height="1"
       fill="1"
@@ -2726,7 +2201,7 @@
       visibility="0"
     />
     <group name="Fig21.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[162, 298, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[10, 10, 64, 19]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F17"
          fill="1"
          fillcolor="white"
@@ -2738,8 +2213,8 @@
       </private>
       
       <rectangle name="Fig21.4.0"
-        x="162"
-        y="298"
+        x="10"
+        y="10"
         width="64"
         height="19"
         fill="0"
@@ -2788,7 +2263,7 @@
       justification="Center"
     >Créer N éléments en échange</text>
     <group name="Fig22.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[595, 273, 87, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[594, 282, 174, 0]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F18"
          fill="0"
          fillcolor="white"
@@ -2800,9 +2275,9 @@
       </private>
       
       <rectangle name="Fig22.2.0"
-        x="595"
-        y="273"
-        width="87"
+        x="594"
+        y="282"
+        width="174"
         height="0"
         fill="0"
         fillcolor="white"
@@ -2811,8 +2286,8 @@
       />
     </group>
     <rectangle name="Fig22.3"
-      x="594"
-      y="274"
+      x="10"
+      y="10"
       width="11"
       height="1"
       fill="1"
@@ -2822,7 +2297,7 @@
       visibility="0"
     />
     <group name="Fig22.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[594, 274, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[10, 10, 64, 19]"
          href="10-10-1-60-3ce268d6:161ad5a728f:-8000:0000000000000F18"
          fill="1"
          fillcolor="white"
@@ -2834,8 +2309,8 @@
       </private>
       
       <rectangle name="Fig22.4.0"
-        x="594"
-        y="274"
+        x="10"
+        y="10"
         width="64"
         height="19"
         fill="0"
@@ -2891,7 +2366,7 @@
                         offset="5" />
     </private>
     <path name="Fig23.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2948,7 +2423,7 @@
                         offset="5" />
     </private>
     <path name="Fig24.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -3005,7 +2480,7 @@
                         offset="5" />
     </private>
     <path name="Fig25.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -3013,7 +2488,7 @@
     >
       <moveto x="289"
               y="311" />
-      <lineto x="336"
+      <lineto x="360"
               y="311" />
     </path>
   </group>
@@ -3062,7 +2537,7 @@
                         offset="5" />
     </private>
     <path name="Fig26.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -3070,8 +2545,8 @@
     >
       <moveto x="585"
               y="299" />
-      <lineto x="457"
-              y="307" />
+      <lineto x="480"
+              y="306" />
     </path>
   </group>
 </pgml>
