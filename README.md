@@ -11,7 +11,8 @@
 ### Lors d'une nouvelle partie
 * Chaque joueur commence avec :
     * 3 Blés ;
-    * 3 Carottes.
+    * 3 Carottes ;
+    * 2 Fermiers.
 
 ### Cycles de productions
 Tous les 6 mois :
@@ -26,15 +27,20 @@ Chaque trimestre
     * 2 Carottes ;
     * 2 Fromages ;
     * 1 Chèvre.
-* **Chaque Chèvre** doit **manger** : 
+* **Chaque Chèvre** doit **se nourrir** : 
     * 1 Blé.
 * Un Individu non nourris **Meurt**.
 
 ### Reproduction
-* **Tous les ans**, chaque **couple de chèvre** donne un **chevreau**.
+* **Tous les ans**, chaque **couple de Chèvre** donne 1 **chevreau**.
+* **Tous les 18 mois**, chaque **couple de Fermier** donne 1 ou 2 **Fermiers**.
 
 ### Exchange Market
-* 1 chèvre vaut 4 blés ou 2 carotes (et vice-versa).
+* 1 chèvre vaut 4 Blés ou 2 Carottes ou 5 Fromages (et vice-versa).
+
+### Fin Partie
+* Si tout les fermiers meurent : Fin de Partie.
+
 
 -------------------------------------------------------------------
 Interface utilisateur avec bouton rafraichir, indique toutes les ressources.
