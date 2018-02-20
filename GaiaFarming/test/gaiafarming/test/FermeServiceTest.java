@@ -27,19 +27,22 @@ public class FermeServiceTest {
         
         //Test MP
         //MP Pattern
-        String pattern = "[a-z]{1,}[A-Z]{1,}[0-9]{1,}";
+        String pattern = "[A-Z]+[a-z]+[0-9]+";
         
         if (5 <= mdp.length() && mdp.length() <= 10) {
             //MP Valide
-                if (mdp.matches(pattern) == true) {
+                if (mdp.matches(".*[A-Z]+.*") && mdp.matches(".*[a-z]+.*") && mdp.matches(".*[0-9]+.*")) {
                     //MP Valide
                     System.out.println("Mot de Passe Valide");
                 }
-                else {
+                else {          
                     //MP Invalide
                     System.out.println("Mot de Passe Invalide Pas les bons caractères");
                 }
-                
+                //Testeur de mot de passe perso
+                if (mdp.matches(".*[A-Z]+.*")) {System.out.println("Le MP contient bien des MAJUSCULES");}
+                if (mdp.matches(".*[a-z]+.*")) {System.out.println("Le MP contient bien des MINUSCULES");}
+                if (mdp.matches(".*[0-9]+.*")) {System.out.println("Le MP contient bien des CHIFFRES");}
         } else {
             //MP Invalide
             System.out.println("Mot de Passe Invalide Trop Long ou Trop Court");
