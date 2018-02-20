@@ -33,9 +33,8 @@ public class FermeService {
         
         //Test MP
         //MP Pattern
-        String pattern = "[a-z]{1,}[A-Z]{1,}[0-9]{1,}";
-        
-                if (5 <= mdp.length() && mdp.length() <= 10) {
+        String pattern = ".*[A-Z]+.*[a-z]+.*[0-9]+";
+                        if (5 <= mdp.length() && mdp.length() <= 10) {
             //MP Valide
                 if (mdp.matches(pattern)) {
                     //MP Valide
@@ -50,6 +49,9 @@ public class FermeService {
             //MP Invalide
             System.out.println("Mot de Passe Invalide");
         }
+        
+                            
+        //Vérifier Pseudo Unique
         
         
     }

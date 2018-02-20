@@ -43,6 +43,11 @@ public class FermeServiceTest {
                 if (mdp.matches(".*[A-Z]+.*")) {System.out.println("Le MP contient bien des MAJUSCULES");}
                 if (mdp.matches(".*[a-z]+.*")) {System.out.println("Le MP contient bien des MINUSCULES");}
                 if (mdp.matches(".*[0-9]+.*")) {System.out.println("Le MP contient bien des CHIFFRES");}
+                
+                if (mdp.matches(".*[A-Z]+.*[a-z]+.*[0-9]+")) {
+                    //MP Valide
+                    System.out.println("Mot de Passe MegaPaternValide");
+                }
         } else {
             //MP Invalide
             System.out.println("Mot de Passe Invalide Trop Long ou Trop Court");
