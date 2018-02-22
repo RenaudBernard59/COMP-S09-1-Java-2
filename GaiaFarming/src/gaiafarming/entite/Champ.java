@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gaiafarming;
+package gaiafarming.entite;
 
 /**
  *
  * @author Formation
  */
-public class Verger extends Terrain{
+public class Champ extends Terrain{
     
 }
