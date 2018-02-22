@@ -44,7 +44,7 @@ public class FermeServiceTest {
                 if (mdp.matches(".*[a-z]+.*")) {System.out.println("Le MP contient bien des MINUSCULES");}
                 if (mdp.matches(".*[0-9]+.*")) {System.out.println("Le MP contient bien des CHIFFRES");}
                 
-                if (mdp.matches(".*[A-Z]+.*[a-z]+.*[0-9]+")) {
+                if (mdp.matches(".*[A-Z]+.*[a-z]+.*[0-9]+^\\W")) {
                     //MP Valide
                     System.out.println("Mot de Passe MegaPaternValide");
                 }
