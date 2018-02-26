@@ -10,6 +10,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
@@ -33,8 +34,16 @@ public class NewFXMain extends Application {
         
         root.setTop(barreOutils);
         
+    
+  
+        
+        root.setBottom(new Label("Copyright M2i - 2018"));
         
         Scene scene = new Scene(root, 300, 250);
+        
+        
+      // scene.setTitle("Gaia Farming");
+        
         
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
