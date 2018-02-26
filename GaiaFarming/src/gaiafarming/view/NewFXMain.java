@@ -36,11 +36,13 @@ public class NewFXMain extends Application {
         barreOutils.getChildren().add(bInscription);
         barreOutils.getChildren().add(bConnexion);        
         
-        root.setTop(barreOutils);
+        bInscription.setOnAction(e -> {});
+            System.out.println("Coucou");
+        
         
     
   
-        
+        root.setTop(barreOutils);
         root.setBottom(new Label("Copyright M2i - 2018"));
         
         Scene scene = new Scene(root, 300, 250);
