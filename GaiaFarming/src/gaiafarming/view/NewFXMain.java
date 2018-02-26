@@ -11,6 +11,7 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -26,11 +27,11 @@ public class NewFXMain extends Application {
 
         BorderPane root = new BorderPane();
         
-        VBox vbox = new VBox();
-        vbox.getChildren().add(new Button("Inscription"));
-        vbox.getChildren().add(new Button("Connexion"));        
+        HBox barreOutils = new HBox();
+        barreOutils.getChildren().add(new Button("Inscription"));
+        barreOutils.getChildren().add(new Button("Connexion"));        
         
-        root.setTop(vbox);
+        root.setTop(barreOutils);
         
         
         Scene scene = new Scene(root, 300, 250);
