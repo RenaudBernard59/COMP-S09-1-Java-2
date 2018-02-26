@@ -23,14 +23,18 @@ import javafx.stage.Stage;
  */
 public class NewFXMain extends Application {
     
+    private Button bInscription = new Button("Inscription");
+    private Button bConnexion = new Button("Connexion");
+    
+    
     @Override
     public void start(Stage primaryStage) {
 
         BorderPane root = new BorderPane();
         
         HBox barreOutils = new HBox();
-        barreOutils.getChildren().add(new Button("Inscription"));
-        barreOutils.getChildren().add(new Button("Connexion"));        
+        barreOutils.getChildren().add(bInscription);
+        barreOutils.getChildren().add(bConnexion);        
         
         root.setTop(barreOutils);
         
