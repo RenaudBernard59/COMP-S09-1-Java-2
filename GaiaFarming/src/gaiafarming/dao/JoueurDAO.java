@@ -5,7 +5,7 @@
  */
 package gaiafarming.dao;
 
-import atelierjava.exercice_ferme.entite.Joueur;
+import gaiafarming.entite.Joueur;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.Persistence;

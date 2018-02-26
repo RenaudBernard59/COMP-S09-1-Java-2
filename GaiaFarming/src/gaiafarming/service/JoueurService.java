@@ -5,10 +5,10 @@
  */
 package gaiafarming.service;
 
-import atelierjava.exercice_ferme.dao.JoueurDAO;
-import atelierjava.exercice_ferme.dao.RessourceDAO;
-import atelierjava.exercice_ferme.entite.Joueur;
-import atelierjava.exercice_ferme.entite.Ressource;
+import gaiafarming.dao.JoueurDAO;
+import gaiafarming.dao.RessourceDAO;
+import gaiafarming.entite.Joueur;
+import gaiafarming.entite.Ressource;
 
 /**
  *

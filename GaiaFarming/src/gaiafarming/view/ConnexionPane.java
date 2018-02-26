@@ -5,7 +5,7 @@
  */
 package gaiafarming.view;
 
-import atelierjava.exercice_ferme.service.JoueurService;
+import gaiafarming.service.JoueurService;
 import javafx.beans.property.StringProperty;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;

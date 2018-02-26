@@ -5,7 +5,7 @@
  */
 package gaiafarming.dao;
 
-import atelierjava.exercice_ferme.entite.Ressource;
+import gaiafarming.entite.Ressource;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 
