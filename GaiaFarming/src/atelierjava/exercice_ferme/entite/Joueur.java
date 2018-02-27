@@ -3,17 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gaiafarming.entity;
+package atelierjava.exercice_ferme.entite;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 /**
  *
- * @author renob
+ * @author Formation
  */
 @Entity
 public class Joueur implements Serializable {
@@ -22,39 +25,47 @@ public class Joueur implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
     private String motDePasse;
     private double budget;
-    private String nom;
-    public String pseudo;
+    private String pseudo;
+    
+    @OneToMany(mappedBy = "joueur")
+    private List<Ressource> ressourcesPossedees = new ArrayList<>();
 
-    public String getNom() {
-        return nom;
+    public List<Ressource> getRessourcesPossedees() {
+        return ressourcesPossedees;
     }
 
+    public void setRessourcesPossedees(List<Ressource> ressourcesPossedees) {
+        this.ressourcesPossedees = ressourcesPossedees;
+    }
+
+    
+    
     public String getMotDePasse() {
         return motDePasse;
-    }
-
-    public String getPseudo() {
-        return pseudo;
-    }
-    
-    
-
-    public void setNom(String nom) {
-        this.nom = nom;
     }
 
     public void setMotDePasse(String motDePasse) {
         this.motDePasse = motDePasse;
     }
 
+    public double getBudget() {
+        return budget;
+    }
+
+    public void setBudget(double budget) {
+        this.budget = budget;
+    }
+
+    public String getPseudo() {
+        return pseudo;
+    }
+
     public void setPseudo(String pseudo) {
         this.pseudo = pseudo;
     }
-
-    
     
     
     
@@ -88,7 +99,7 @@ public class Joueur implements Serializable {
 
     @Override
     public String toString() {
-        return "gaiafarming.entite.Joueur[ id=" + id + " ]";
+        return "atelierjava.exercice_ferme.entity.Joueur[ id=" + id + " ]";
     }
     
 }

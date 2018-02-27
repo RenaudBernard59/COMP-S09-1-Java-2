@@ -3,29 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gaiafarming.view;
+package atelierjava.exercice_ferme.view;
 
+import atelierjava.exercice_ferme.service.JoueurService;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
 /**
  *
- * @author renob
+ * @author Formation
  */
-public class EcranInscription extends GridPane {
+public class InscriptionView extends GridPane {
 
     private Label lPseudo = new Label("Pseudo");
     private TextField tfPseudo = new TextField();
-    private Label lMdp = new Label("Mot de passe");
+    private Label lMdp = new Label("Mot-de-passe");
     private PasswordField pfMdp = new PasswordField();
     private Button bInscription = new Button("Inscription");
-    
-    
-    public EcranInscription() {
-        
+
+    public InscriptionView(BorderPane borderPaneDuParent) {
+
         // Place des comosants dans ma vue
         this.add(lPseudo, 0, 0);
         this.add(tfPseudo, 1, 0);
@@ -43,6 +45,10 @@ public class EcranInscription extends GridPane {
                 // Appelle service d'inscription
                 JoueurService service = new JoueurService();
                 service.inscription(pseudoEntre, mdpEntre);
+                
+                // Remplace centre du parent par texte vide
+                borderPaneDuParent.setCenter(new Label("Inscription réussie"));
+                
             } catch (Exception exception) {
                 
                 Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -51,9 +57,7 @@ public class EcranInscription extends GridPane {
                 alert.setContentText( exception.getMessage() );
                 
                 alert.showAndWait();
-        
+            }
+        });
     }
-    
-    
-    
 }

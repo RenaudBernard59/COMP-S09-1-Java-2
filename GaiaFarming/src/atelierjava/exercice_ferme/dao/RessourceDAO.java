@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gaiafarming.dao;
+package atelierjava.exercice_ferme.dao;
 
-import gaiafarming.entite.Ressource;
+import atelierjava.exercice_ferme.entite.Ressource;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 

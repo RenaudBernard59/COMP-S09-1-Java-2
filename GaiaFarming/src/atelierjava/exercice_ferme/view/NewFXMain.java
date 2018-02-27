@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gaiafarming.view;
+package atelierjava.exercice_ferme.view;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -19,39 +19,33 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author renob
+ * @author Formation
  */
 public class NewFXMain extends Application {
     
     private Button bInscription = new Button("Inscription");
     private Button bConnexion = new Button("Connexion");
     
-    
     @Override
     public void start(Stage primaryStage) {
-
+        
         BorderPane root = new BorderPane();
         
         HBox barreOutils = new HBox();
-        barreOutils.getChildren().add(bInscription);
-        barreOutils.getChildren().add(bConnexion);        
+        barreOutils.getChildren().add( bInscription );
+        barreOutils.getChildren().add( bConnexion );
         
-        bInscription.setOnAction(e -> {});
-            System.out.println("Coucou");
+        bInscription.setOnAction( e -> {
+            
+            root.setCenter( new InscriptionView(root) );
+        });
         
-        
-    
-  
-        root.setTop(barreOutils);
-        root.setBottom(new Label("Copyright M2i - 2018"));
+        root.setTop(barreOutils );
+        root.setBottom( new Label("Copyright 2018 M2i") );
         
         Scene scene = new Scene(root, 300, 250);
         
-        
-      // scene.setTitle("Gaia Farming");
-        
-        
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("Gaia");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gaiafarming.dao;
+package atelierjava.exercice_ferme.dao;
 
-import gaiafarming.entite.Joueur;
+import atelierjava.exercice_ferme.entite.Joueur;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
@@ -13,7 +13,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author Formatioon
+ * @author Formation
  */
 public class JoueurDAO {
 

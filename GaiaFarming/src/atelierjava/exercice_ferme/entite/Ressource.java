@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gaiafarming.entite;
+package atelierjava.exercice_ferme.entite;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
@@ -20,7 +20,7 @@ import javax.persistence.ManyToOne;
  * @author Formation
  */
 @Entity
-public class Ressource_1 implements Serializable {
+public class Ressource implements Serializable {
 
     public enum TypeRessource {
         CHEVRE,
@@ -90,10 +90,10 @@ public class Ressource_1 implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Ressource_1)) {
+        if (!(object instanceof Ressource)) {
             return false;
         }
-        Ressource_1 other = (Ressource_1) object;
+        Ressource other = (Ressource) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }

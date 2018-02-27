@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gaiafarming.service;
+package atelierjava.exercice_ferme.service;
 
-import gaiafarming.dao.JoueurDAO;
-import gaiafarming.dao.RessourceDAO;
-import gaiafarming.entite.Joueur;
-import gaiafarming.entite.Ressource;
+import atelierjava.exercice_ferme.dao.JoueurDAO;
+import atelierjava.exercice_ferme.dao.RessourceDAO;
+import atelierjava.exercice_ferme.entite.Joueur;
+import atelierjava.exercice_ferme.entite.Ressource;
 
 /**
  *
