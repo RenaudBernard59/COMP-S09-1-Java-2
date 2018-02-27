@@ -26,6 +26,31 @@ public class EcranInscription extends GridPane {
     
     public EcranInscription() {
         
+        // Place des comosants dans ma vue
+        this.add(lPseudo, 0, 0);
+        this.add(tfPseudo, 1, 0);
+        this.add(lMdp, 0, 1);
+        this.add(pfMdp, 1, 1);
+        this.add(bInscription, 1, 2);
+
+        // Définir mon controleur sur clic bouton
+        bInscription.setOnAction(e -> {
+            try {
+                // Récup pseudo et mdp entrés par l'utilisateur
+                String pseudoEntre = tfPseudo.getText();
+                String mdpEntre = pfMdp.getText();
+
+                // Appelle service d'inscription
+                JoueurService service = new JoueurService();
+                service.inscription(pseudoEntre, mdpEntre);
+            } catch (Exception exception) {
+                
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Erreur");
+                alert.setHeaderText("Il s'est produit une erreur");
+                alert.setContentText( exception.getMessage() );
+                
+                alert.showAndWait();
         
     }
     

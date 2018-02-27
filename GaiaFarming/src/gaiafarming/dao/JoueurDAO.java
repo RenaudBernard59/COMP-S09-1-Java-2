@@ -18,7 +18,7 @@ import javax.persistence.Query;
 public class JoueurDAO {
 
     public Joueur rechercher(long idJoueur){
-        o
+        
         EntityManager em = Persistence.createEntityManagerFactory("PU").createEntityManager();
         
         Joueur j = em.find(Joueur.class, idJoueur);
