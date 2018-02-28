@@ -10,5 +10,9 @@ package atelierjava.exercice_ferme.exception;
  * @author renob
  */
 public class PseudoExistException extends Exception{
+
+    public PseudoExistException(String message) {
+        super(message);
+    }
     
 }

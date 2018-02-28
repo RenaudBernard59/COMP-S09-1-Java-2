@@ -9,6 +9,7 @@ import atelierjava.exercice_ferme.dao.JoueurDAO;
 import atelierjava.exercice_ferme.dao.RessourceDAO;
 import atelierjava.exercice_ferme.entite.Joueur;
 import atelierjava.exercice_ferme.entite.Ressource;
+import atelierjava.exercice_ferme.exception.PseudoExistException;
 import atelierjava.exercice_ferme.exception.ValidationException;
 
 /**
@@ -75,7 +76,7 @@ public class JoueurService {
      * @param pseudo
      * @param mdp
      */
-    public void inscription(String pseudo, String mdp) throws ValidationException {
+    public void inscription(String pseudo, String mdp) throws ValidationException, PseudoExistException {
 
         // Validation
         // Erreur si pseudo < 3 ou > 8 car
@@ -100,7 +101,7 @@ public class JoueurService {
         // Vérifier que le pseudo est encore dispo
         JoueurDAO dao = new JoueurDAO();
         if (dao.existe(pseudo)) {
-            throw new ValidationException("Ce pseudo existe déjà");
+            throw new PseudoExistException("Ce pseudo existe déjà");
         }
 
         // Ajoute le joueur en BD
