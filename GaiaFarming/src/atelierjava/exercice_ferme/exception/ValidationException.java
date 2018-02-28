@@ -10,5 +10,8 @@ package atelierjava.exercice_ferme.exception;
  * @author renob
  */
 public class ValidationException extends Exception{
-    
+
+    public ValidationException(String message) {
+        super(message);
+    }    
 }
