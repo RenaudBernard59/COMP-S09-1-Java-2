@@ -9,13 +9,6 @@ package atelierjava.exercice_ferme.exception;
  *
  * @author renob
  */
-public class AtelierjavaExercice_fermeException {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class ValidationException extends Exception{
     
 }
