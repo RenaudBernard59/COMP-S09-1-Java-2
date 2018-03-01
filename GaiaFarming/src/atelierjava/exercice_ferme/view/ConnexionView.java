@@ -40,7 +40,7 @@ public class ConnexionView extends GridPane {
         bConnexion.setOnAction(e -> {
             try {
                 // Récup pseudo et mdp entrés par l'utilisateur
-                String pseudoEntre = lPseudo.getText();
+                String pseudoEntre = tfPseudo.getText();
                 String mdpEntre = pfMdp.getText();
 
                 // Appelle service d'inscription
@@ -48,7 +48,7 @@ public class ConnexionView extends GridPane {
                 service.connexion(pseudoEntre, mdpEntre);
                 
                 // Remplace centre du parent par texte vide
-                borderPaneDuParent.setCenter(new Label("Connexion réussie"));
+                borderPaneDuParent.setCenter(new EcranJeuView());
                 
             } catch (Exception exception) {
                 
