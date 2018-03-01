@@ -12,5 +12,9 @@ import javafx.scene.layout.GridPane;
  * @author renob
  */
 public class EcranJeuView extends GridPane{
-    
+    private VBoxRessource vbrCarotte = new VBoxRessource(0, "C:\\Users\\renob\\Documents\\GitHub\\COMP\\COMP-S09-1-Java-2\\GaiaFarming\\src\\images\\carrot.png");
+    private VBoxRessource vbrFermier = new VBoxRessource(0, "C:\\Users\\renob\\Documents\\GitHub\\COMP\\COMP-S09-1-Java-2\\GaiaFarming\\src\\images\\farmer.png");
+    private VBoxRessource vbrBle = new VBoxRessource(0, "C:\\Users\\renob\\Documents\\GitHub\\COMP\\COMP-S09-1-Java-2\\GaiaFarming\\src\\images\\wheat.png");
+    private VBoxRessource vbrChevre = new VBoxRessource(0, "C:\\Users\\renob\\Documents\\GitHub\\COMP\\COMP-S09-1-Java-2\\GaiaFarming\\src\\images\\goat.png");
+    private VBoxRessource vbrFromage = new VBoxRessource(0, "C:\\Users\\renob\\Documents\\GitHub\\COMP\\COMP-S09-1-Java-2\\GaiaFarming\\src\\images\\cheese.png");
 }
