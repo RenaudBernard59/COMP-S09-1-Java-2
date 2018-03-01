@@ -6,6 +6,8 @@
 package atelierjava.exercice_ferme.view;
 
 import atelierjava.exercice_ferme.service.JoueurService;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -37,27 +39,32 @@ public class ConnexionView extends GridPane {
         this.add(bConnexion, 1, 2);
 
         // Définir mon controleur sur clic bouton
-        bConnexion.setOnAction(e -> {
-            try {
-                // Récup pseudo et mdp entrés par l'utilisateur
-                String pseudoEntre = tfPseudo.getText();
-                String mdpEntre = pfMdp.getText();
-
-                // Appelle service d'inscription
-                JoueurService service = new JoueurService();
-                service.connexion(pseudoEntre, mdpEntre);
-                
-                // Remplace centre du parent par texte vide
-                borderPaneDuParent.setCenter(new EcranJeuView());
-                
-            } catch (Exception exception) {
-                
-                Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setTitle("Erreur");
-                alert.setHeaderText("Echec de connexion");
-                alert.setContentText( exception.getMessage() );
-                
-                alert.showAndWait();
+        bConnexion.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                try {
+                    // Récup pseudo et mdp entrés par l'utilisateur
+                    String pseudoEntre = tfPseudo.getText();
+                    String mdpEntre = pfMdp.getText();
+                    
+                    // Appelle service d'inscription
+                    JoueurService service = new JoueurService();
+                    service.connexion(pseudoEntre, mdpEntre);
+                    
+                    // Remplace centre du parent par texte vide
+                    borderPaneDuParent.setCenter(new EcranJeuView());
+                    
+                } catch (Exception erreur) {
+                    
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Erreur");
+                    alert.setHeaderText("Echec de connexion");
+                    alert.setContentText(erreur.getMessage());
+                    
+                    erreur.printStackTrace();
+                    
+                    alert.showAndWait();
+                }
             }
         });
     
